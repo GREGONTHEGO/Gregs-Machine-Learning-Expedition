@@ -8,12 +8,22 @@ The second project that I completed with this dataset was creating a Naive Bayes
 
 The third project on this dataset was to create a linear support vector machine. This is used on data that can be split linearly and finds the best plane that has the largest margin. The reason for the largest margin to be important is so that it is more likely that the line holds true with tests.
 
+The fourth project is to create a tree regressor. This will essentially split the data based on the best split at the moment. For example, for the first split it looks at all the data for all three flowers and can split one of them completely. Then it uses data from the left and right split to make more splits. From the Iris data, it seems that a depth of 4 is enough to perfectly split the data.
 
+The Fifth project on the Iris dataset was to create our own hidden layers and code the math that accurs behind the scenes and compute the accuracy and loss. This entails both the forward and backward propagation as well as writing the code that will update the weight and bias of all of the connections. This neural network will be trained and tested on several combinations of the different flowers and the features that they have.
+
+The last project that I have completed on the Iris dataset was creating neural network that can easily update for having more layers and neurons. This also updates weights and biases based on gradients rather than separately calculating for the individual layer.
 
 # XY Dataset
 The project completed on a bunch of xy datapoints was to find the line of best fit. This project introduced cleaning the dataset by getting rid of any values that had NaN. Linear Regression is a model that estimates the relationship between scalar response and one or more explanatory variables. This uses MSE as the loss function.
 
 The next project was on the same dataset but it compares linear regression to ridge regression. Ridge regression is linear regression with an added regularization term which helps prevent overfitting and improves the model stability. I also run the ridge regression through a kFold cross validation. kFold uses the data such that the validation segment changes. In my case we had 10 folds which means that we have 10 different training and validation splits that the ridge regression is run on.
 
-#CIFAR Dataset
+# CIFAR Dataset
 The project was to create a two layer CNN and test different number of filters, size of kernels, and different amounts of padding. The number of filters that I tested was 16, 32, 64, 128, for which they consistently did better but they also took longer to run when there were more filters. The sizes of kernels tested was 3,5,7,9, for which a kernel size of 5 did the best and 9 did the worst with 3 and 7 looking similar. Now, I do understand that with bigger kernel size we should use a bigger amount of padding however, the test above was to just see what the difference does. The last set of tests for padding 0,1,2,3, shows that 0 does much worse than the others and 1,2, and 3 are all very similar.
+
+# Hospital Dataset
+
+The project here is cleaning and making all of the features numeric so that my NN can learn how likely a pacient is going to pass away. This only cleans 10 of the columns that I thought was important. However, I learned that giving features that do not seemingly have any relation to death can make the neural network much more accurate.
+
+In another project using the same dataset I switched from using 10 columns to using all 47 columns. This means I switched all of the words in the dataset into numbers. I also used a standard scaler as there are certain columns where I do not want the answers to be worth more or less than each other. I will be working on making this better over the summer by looking into other feature working techniques.
