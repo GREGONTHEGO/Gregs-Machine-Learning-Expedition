@@ -27,3 +27,15 @@ The project was to create a two layer CNN and test different number of filters, 
 The project here is cleaning and making all of the features numeric so that my NN can learn how likely a pacient is going to pass away. This only cleans 10 of the columns that I thought was important. However, I learned that giving features that do not seemingly have any relation to death can make the neural network much more accurate.
 
 In another project using the same dataset I switched from using 10 columns to using all 47 columns. This means I switched all of the words in the dataset into numbers. I also used a standard scaler as there are certain columns where I do not want the answers to be worth more or less than each other. I will be working on making this better over the summer by looking into other feature working techniques.
+
+# IMDB Dataset
+
+This project takes the imdb dataset and loads the 10000 most frequent words decodes and one hot encodes them to their position in the 10000 words. The review will be one hot encoded so that if there is "great" in the review the index of "great" in the 10000 will be set to one. The problems with going over reviews like this is that it does not care about the order of words, number of words, or punctuation. This is how we made the words able to be processed by a DNN. The model for this preprocessed data is a sequential neural network where there are 3 layers that have l1, l2 and dropout for regularrization. And a final sigmoid node that decides whether the review is a positive or negative review.
+
+# MNIST Dataset
+
+This dataset is a compilation of 60000 hand drawn numbers from 0 to 9. What I did with this project was to combine some of the numbers together. For example, 0 and 1, 2 and 3, so on. The model that I used for this test was with a sequential neural network that has two layers an input of a 1D array of the picture and an output of the softmax of the five possible mixtures.
+
+# Cats and Dogs Dataset
+
+This project loads the cats and dogs dataset from the tensorflow datasets. The model is a convolutional neural network that takes the 150 x 150 rgb images and does data augmentation to allow the dataset to seem larger than it is. It also uses l2 and dropout for regularization.
