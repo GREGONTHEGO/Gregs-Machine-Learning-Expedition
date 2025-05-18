@@ -38,4 +38,12 @@ This dataset is a compilation of 60000 hand drawn numbers from 0 to 9. What I di
 
 # Cats and Dogs Dataset
 
-This project loads the cats and dogs dataset from the tensorflow datasets. The model is a convolutional neural network that takes the 150 x 150 rgb images and does data augmentation to allow the dataset to seem larger than it is. It also uses l2 and dropout for regularization.
+This project loads the cats and dogs dataset from the tensorflow datasets. The model is a loading the resnet50 base freezing it and adding a hidden and output layer. These will allow for the preset weights of the resnet50 to be tuned for picking cats vs dogs. The next parts of this project were to thaw a few parts of the resnet50 to update at a very small learning rate and see how accurate it can become.
+
+# Pets Dataset
+
+This project was to visualize random pictures along with their trimap. It was also used to visualize all of the 
+
+# Entropy and Perceptron
+
+This project was about writing code to calculate entropy as well as create perceptrons to differentiate between or, and, and xor data points. However, there is no way for a perceptron to split xor perfectly. The last mini project was to see how changing initial weights and learning rates can get your model stuck or unstuck from a local minimum. As well as show if you use to small of a learning rate that your system may run out of time before it actually reaches the minimum.
