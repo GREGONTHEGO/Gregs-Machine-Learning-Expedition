@@ -5,9 +5,15 @@ This repository is a curated collection of my machine learning projects using va
 -  **Naive Bayes Classifier** - Uses conditional probabilities to classify Iris flowers based on all features.
 - **Support Vector Machine (SVM)** - Applies linear SVM to find the optimal hyperplane with the largest margin.
 -  **Decision Tree Regressor** - Recursively splits features to predict continuous outcomes. A depth of 4 effectively partitions the dataset.
+-  **Perceptron** - Implementation of one neuron that has one weight and one bias. (works like y = w * x + b) where y is the guess, w is the weight, x is the input and b is the bias.
+  ![perceptron_decision_boundary](https://github.com/user-attachments/assets/0e6ea493-8f60-47db-8274-f99c9796000e)
 - **Custom Neural Networks** - Manual implementation of multi-layer networks with forward/backward propagation and weight updates using gradients.
+![training](https://github.com/user-attachments/assets/336b27c9-1925-40da-afcd-da5b63ac868e)
+This is what the training for an iris dataset with two inputs, two layers with seven nodes and one output.
+![testing](https://github.com/user-attachments/assets/6e6b4dc8-f53f-49ae-8426-492364879fa5)
+Based on the inputs will tell what paths were used to get the final answer.
 - **Modular Neural Network Architecture** - Built for flexibility, allowing variable layer sizes and depths, updating weights via gradient descent.
-- ## Might need to look into adding perceptron here
+
 
 # XY Dataset
 - **Linear Regression** - Fit a line to noisy XY data, handling NaNs during preprocessing.
