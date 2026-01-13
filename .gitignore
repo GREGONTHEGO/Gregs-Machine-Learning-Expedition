@@ -1,0 +1,10 @@
+# Ignore dataset folders
+images/
+annotations/
+CatsVsDogs/
+data/
+# (Optional) Good practice to ignore these too:
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints/
