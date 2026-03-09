@@ -21,7 +21,7 @@ This repository is a curated collection of my machine learning projects using va
 * **Linear Programming Optimization (Project 1):**
     * **Method:** An exploration of mathematical optimization using `scipy.optimize`.
     * **Implementation:** Wrote a script to generate random generator matrices ($G$) and used **Linear Programming** to calculate specific metrics ($h_m$) across thousands of configurations ($n, k, m$).
-    * **Technical Detail:** Involved setting up complex constraint matrices (upper bounds, equality constraints) to iteratively solve for optimal vectors in a geometric space.
+    * **Technical Detail:** Trained Neural Networks where given ($G$) they would guess ($h_m$). Learned that taking the log of the output and training to guess that can sometimes allow the model to converge where not taking the log would fail.
 
 ## Real-World & Time Series
 * **Temperature Forecasting (Climate Data):**
